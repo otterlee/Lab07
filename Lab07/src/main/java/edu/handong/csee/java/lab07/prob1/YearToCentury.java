@@ -16,8 +16,8 @@ public class YearToCentury {
 	 * And that quotient added by 1 is century.
 	 * But in case that has no remainder, do not add 1 to century.
 	 * 
-	 * @param year
-	 * @return century
+	 * @param year input
+	 * @return century or century in case
 	 */
 	public int calc_year(int year) {
 		int remainder = year % 100; //the ramainder that divided year by 100.
@@ -30,6 +30,7 @@ public class YearToCentury {
 	 * this takes the 'input_year' and print-out the 'output_century'. 
 	 * And initiate class YearToCentury and Scanner.
 	 *
+	 * @param args, actually no parameter
 	 */
 	public static void main (String[] args) {
 		int input_year, output_century;//declare input_year, output_century.

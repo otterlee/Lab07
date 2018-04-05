@@ -17,8 +17,10 @@ public class Chicken {
 	/**
 	 * This is a constructor method.
 	 * It takes the name, price and number of stars of menu in main method.
-	 * and initialize menu's member .
-	 * @param name, price, stars
+	 * and initialize menu's member.
+	 * @param name of menu
+	 * @param price of menu
+	 * @param stars rating
 	 */
 	public Chicken(String name, double price, int stars) { //constructor overloading with the same name as class
 		this.name = name; //Use 'this', when access instance variables of a class
@@ -27,7 +29,7 @@ public class Chicken {
 	}
 	/**
 	 * This method changes the stars value to newly input one.
-	 * @param stars
+	 * @param stars, actually number of star
 	 */
 	public void change_stars(int stars) {
 		this.stars = stars;//Change to the newly received value of stars number.
@@ -42,7 +44,7 @@ public class Chicken {
 
 	/**
 	 * This method gets the number of stars of menu and return it.
-	 * @return
+	 * @return name
 	 */
 	public int get_stars() {
 		return this.stars;//only get number of stars from members.
@@ -51,7 +53,7 @@ public class Chicken {
 	 * This is main method.
 	 * Instantiate class Chicken to menu 1, 2 and 3, and then change the number of stars in each menu.
 	 * And print-out the star ratings of each menu.
-	 * @param args
+	 * @param args, actually no parameter
 	 */
 	public static void main(String[] args) {
 	Chicken menu1 = new Chicken("Cheese_mustard", 16000.00, 5);//instantiate class Chicken to menu1, and set the member directly in main method.

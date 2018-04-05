@@ -16,7 +16,10 @@ public class Attendance {
 	 * This method is constructor method.
 	 * It takes the name, year and student_id, missed time of student.
 	 * And set them member of student data.
-	 * @param name, year, student_id, missed
+	 * @param name of student
+	 * @param year of student
+	 * @param student_id of student
+	 * @param missed time  of student
 	 */
 	public Attendance(String name, int year, String student_id, int missed) {
 		this.name = name; //put the name received as parameter to instance variable name.
@@ -26,7 +29,7 @@ public class Attendance {
 	}
 	/**
 	 * This method takes the parameter 'missed_time' and set to 'missed'.
-	 * @param missed_time
+	 * @param missed_time (=absent time)
 	 */
 	public void set_missed(int missed_time) {
 		this.missed = missed_time; //put the value missed_time recieved as parameter into missed 
@@ -48,7 +51,7 @@ public class Attendance {
 	 * In main method instantiates Random and class Attendance.
 	 * and creates random number and set it by using set_missed method.
 	 * and check pass or fail and print-out message by calling check_missed method.
-	 * @param args
+	 * @param args (string)
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
